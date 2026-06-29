@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/1.Bank.Gateway/">
+    <Project Path="src/Bank.Gateway/Bank.Gateway.Api/Bank.Gateway.Api.csproj" Id="705dc72c-20ab-4c9f-8f7f-30feb6f12564" />
+  </Folder>
+</Solution>
