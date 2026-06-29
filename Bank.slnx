@@ -3,4 +3,7 @@
   <Folder Name="/src/1.Bank.Gateway/">
     <Project Path="src/Bank.Gateway/Bank.Gateway.Api/Bank.Gateway.Api.csproj" Id="705dc72c-20ab-4c9f-8f7f-30feb6f12564" />
   </Folder>
+  <Folder Name="/src/2.Bank.Transaction/">
+    <Project Path="src/Bank.Transaction/Bank.Transaction.Api/Bank.Transaction.Api.csproj" Id="0cf4c207-8803-4141-b5cb-e42009400e89" />
+  </Folder>
 </Solution>
