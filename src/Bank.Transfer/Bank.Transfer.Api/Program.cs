@@ -1,9 +1,11 @@
-using Bank.Transaction.Api.Application.Database;
 using Bank.Transaction.Api.Persistence.Database;
+using Bank.Transfer.Api.Application.Database;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var app = builder.Build();
 
 builder.Services.AddDbContext<DatabaseService>(options =>
 {
@@ -12,14 +14,10 @@ builder.Services.AddDbContext<DatabaseService>(options =>
 
 builder.Services.AddScoped<IDatabaseService, DatabaseService>();
 
-var app = builder.Build();
-
-app.MapGet("/transaction", async ([FromServices] IDatabaseService _databaseService) =>
+app.MapGet("/transfer", async ([FromServices] IDatabaseService _databaseService) =>
 {
-    var data = await _databaseService.Transaction.ToListAsync();
+    var data = await _databaseService.Transfer.ToListAsync();
     return data;
-
 });
 
 app.Run();
-

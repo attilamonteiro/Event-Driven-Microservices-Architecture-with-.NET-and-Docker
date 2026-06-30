@@ -7,19 +7,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<DatabaseService>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("TRANSACTIONSQLDBCONSTR"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("BALANCESQLDBCONSTR"));
 });
-
 builder.Services.AddScoped<IDatabaseService, DatabaseService>();
 
 var app = builder.Build();
 
-app.MapGet("/transaction", async ([FromServices] IDatabaseService _databaseService) =>
+app.MapGet("/balance", async ([FromServices] IDatabaseService _databaseServices) =>
 {
-    var data = await _databaseService.Transaction.ToListAsync();
+    var data = await _databaseServices.Balance.ToListAsync();
     return data;
-
 });
 
 app.Run();
-

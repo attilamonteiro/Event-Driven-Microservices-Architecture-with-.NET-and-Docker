@@ -6,4 +6,10 @@
   <Folder Name="/src/2.Bank.Transaction/">
     <Project Path="src/Bank.Transaction/Bank.Transaction.Api/Bank.Transaction.Api.csproj" Id="0cf4c207-8803-4141-b5cb-e42009400e89" />
   </Folder>
+  <Folder Name="/src/3.Bank.Balance/">
+    <Project Path="src/Bank.Balance/Bank.Balance.Api/Bank.Balance.Api.csproj" Id="833a057a-72b5-48ef-aba2-ab9c656c6e79" />
+  </Folder>
+  <Folder Name="/src/4.Bank.Transaction/">
+    <Project Path="src/Bank.Transfer/Bank.Transfer.Api/Bank.Transfer.Api.csproj" Id="9136d797-ce76-4e4c-aaaa-23a5bcea28a2" />
+  </Folder>
 </Solution>
