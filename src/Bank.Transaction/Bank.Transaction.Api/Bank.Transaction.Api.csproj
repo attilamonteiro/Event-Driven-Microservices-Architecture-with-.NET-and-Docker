@@ -4,12 +4,18 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>f5d368af-07c2-4b3a-ac19-2a4d21350cf5</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Application\External\" />
     <Folder Include="Application\Features\" />
     <Folder Include="External\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.*" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.*" />
   </ItemGroup>
 
 </Project>
