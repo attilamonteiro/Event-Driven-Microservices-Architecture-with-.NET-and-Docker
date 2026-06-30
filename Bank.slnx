@@ -12,4 +12,7 @@
   <Folder Name="/src/4.Bank.Transaction/">
     <Project Path="src/Bank.Transfer/Bank.Transfer.Api/Bank.Transfer.Api.csproj" Id="9136d797-ce76-4e4c-aaaa-23a5bcea28a2" />
   </Folder>
+  <Folder Name="/src/5.Bank.Notification/">
+    <Project Path="src/Bank.Notification/Bank.Notification.Api/Bank.Notification.Api.csproj" Id="44866b00-8db3-471d-8e1e-b9108afb685b" />
+  </Folder>
 </Solution>
