@@ -5,6 +5,7 @@ namespace Bank.Notification.Api.Application.Database
 {
     public interface IDatabaseService
     {
-        public DbSet<NotificationEntity> Notifications { get; set; }
+        Task<bool> AddAsync(NotificationEntity entity);
+        Task<List<NotificationEntity>> GetAllAsync();
     }
 }
